@@ -1,7 +1,5 @@
 package com.dailycodebuffer.Springboottutorial.entity;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,13 +9,13 @@ import javax.persistence.Id;
 public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long deparmentId;
+    private Long departmentId;
     private String departmentName;
     private String departmentAddress;
     private String departmentCode;
 
-    public Department(Long deparmentId, String departmentName, String departmentAddress, String departmentCode) {
-        this.deparmentId = deparmentId;
+    public Department(Long departmentId, String departmentName, String departmentAddress, String departmentCode) {
+        this.departmentId = departmentId;
         this.departmentName = departmentName;
         this.departmentAddress = departmentAddress;
         this.departmentCode = departmentCode;
@@ -29,19 +27,19 @@ public class Department {
     @Override
     public String toString() {
         return "Department{" +
-                "deparmentId=" + deparmentId +
+                "deparmentId=" + departmentId +
                 ", departmentName='" + departmentName + '\'' +
                 ", departmentAddress='" + departmentAddress + '\'' +
                 ", departmentCode='" + departmentCode + '\'' +
                 '}';
     }
 
-    public Long getDeparmentId() {
-        return deparmentId;
+    public Long getDepartmentId() {
+        return departmentId;
     }
 
-    public void setDeparmentId(Long deparmentId) {
-        this.deparmentId = deparmentId;
+    public void setDepartmentId(Long departmentId) {
+        this.departmentId = departmentId;
     }
 
     public String getDepartmentName() {
